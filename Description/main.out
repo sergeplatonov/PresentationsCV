@@ -1,0 +1,18 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Objective}{chapter.1}% 2
+\BOOKMARK [0][-]{chapter.2}{Time series forecasting}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Feature Engineering}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{ML Methods}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.3}{Cross validation and comparing models}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.4}{Examples}{chapter.2}% 7
+\BOOKMARK [0][-]{chapter.3}{Customer e-mail categorization}{}% 8
+\BOOKMARK [1][-]{section.3.1}{Model description}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.2}{Feature Engineering}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.3}{ML methods}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.4}{Examples}{chapter.3}% 12
+\BOOKMARK [0][-]{chapter.4}{Repeat purchase probability }{}% 13
+\BOOKMARK [0][-]{chapter.5}{Inventory Management Optimization}{}% 14
+\BOOKMARK [1][-]{section.5.1}{Input of the optimization model}{chapter.5}% 15
+\BOOKMARK [1][-]{section.5.2}{Linearizing the problem}{chapter.5}% 16
+\BOOKMARK [1][-]{section.5.3}{Mixed Integer Problem}{chapter.5}% 17
+\BOOKMARK [1][-]{section.5.4}{Control values}{chapter.5}% 18
