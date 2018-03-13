@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber main"] 1520175803 "main.bcf" "main.bbl" "main" 1520870841
-  "main.bcf" 1520870841 94474 64adc87c73e8b233c4ae2cfb79c882e6 ""
+["biber main"] 1520175803 "main.bcf" "main.bbl" "main" 1520968078
+  "main.bcf" 1520968077 94474 64adc87c73e8b233c4ae2cfb79c882e6 ""
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1520870838 "main.tex" "main.pdf" "main" 1520870841
+  "main.bbl"
+["pdflatex"] 1520968073 "main.tex" "main.pdf" "main" 1520968078
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1480098666 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -222,23 +222,24 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1506858067 4129592 8c1397130595c2730ba17e86698df5bd ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
+  "Pictures/avsc.png" 1520682969 102532 b5e9b26a30097e057fd4bd7fc4fbba2c ""
   "Pictures/enron.png" 1520257988 20448 9e96285fcf7df60bf757a6839c3053ef ""
   "Pictures/rossmann.png" 1520255491 30240 3d92c8e732e3532524076208142e05e8 ""
   "Pictures/start.jpg" 1520681118 90687 c15a8c6add3dafba0c0fc1a1438318ee ""
   "Pictures/zara.png" 1520851346 961416 7b63118aa9fe3f4935755eb1fa95e273 ""
-  "main.aux" 1520870841 5907 b44fd1d84c7d3cf6b4ec20a22be493e6 ""
+  "main.aux" 1520968077 6631 96f12e8f71d9414e49117720d65331fd ""
   "main.bbl" 1520175814 466 87c763802318ca007e475d2fb9c40fb5 "biber main"
-  "main.out" 1520870841 1134 2f803f67850a6d1550af2d633a5cf4b6 ""
-  "main.run.xml" 1520870841 2313 ddaa49e5b57bf720a4d7172aa397ff73 ""
-  "main.tex" 1520870837 27720 eed2c326d04a8b6285c89be25c6fb229 ""
-  "main.toc" 1520870841 2215 c982c99b3ecce226bea1e68adc2ee982 ""
+  "main.out" 1520968077 1440 29c524ea5f812780f28f22a7c104d16a ""
+  "main.run.xml" 1520968077 2313 ddaa49e5b57bf720a4d7172aa397ff73 ""
+  "main.tex" 1520968072 25860 9328fc5855239bdbd9f5629c7687174b ""
+  "main.toc" 1520968077 2764 cd6e95c85d31f5ac91ac339d6853a87d ""
   "structure.tex" 1520171818 14466 6c8bd199f6d560b167a3dbd8bb433e5a ""
   (generated)
   "main.run.xml"
-  "main.bcf"
-  "main.pdf"
-  "main.aux"
-  "main.ptc"
   "main.out"
+  "main.ptc"
+  "main.bcf"
+  "main.aux"
   "main.log"
   "main.toc"
+  "main.pdf"

@@ -1,4 +1,4 @@
-PWD /Users/sergey/Documents/GitHub/Data-science-problems/Description
+PWD /Users/sergey/Documents/Description
 INPUT /usr/local/texlive/2017/texmf.cnf
 INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -339,7 +339,7 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/avantgar/pagk8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/avantgar/pagd8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/avantgar/pagd8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/avantgar/pagd8t.tfm
-OUTPUT main.toc
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/avantgar/pagk8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/avantgar/pagd8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/avantgar/pagd8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/avantgar/pagd8t.vf
@@ -350,6 +350,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/avantgar/pagd8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/avantgar/pagd8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/avantgar/pagk8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/avantgar/pagk8r.tfm
+OUTPUT main.toc
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/avantgar/pagk8t.vf
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/avantgar/pagk8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
@@ -357,7 +360,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/avantgar/pagk8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/avantgar/pagd8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -430,6 +432,9 @@ INPUT ./Pictures/rossmann.png
 INPUT Pictures/enron.png
 INPUT ./Pictures/enron.png
 INPUT ./Pictures/enron.png
+INPUT Pictures/avsc.png
+INPUT ./Pictures/avsc.png
+INPUT ./Pictures/avsc.png
 INPUT Pictures/zara.png
 INPUT ./Pictures/zara.png
 INPUT ./Pictures/zara.png

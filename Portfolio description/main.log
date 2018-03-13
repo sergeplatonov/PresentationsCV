@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.1)  12 MAR 2018 17:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.1)  13 MAR 2018 20:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1682,7 +1682,7 @@ LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <35> not available
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <35> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 36.
 
-<Pictures/start.jpg, id=79, 637.38126pt x 776.9025pt>
+<Pictures/start.jpg, id=99, 637.38126pt x 776.9025pt>
 File: Pictures/start.jpg Graphic file (type jpg)
  <use Pictures/start.jpg>
 Package pdftex.def Info: Pictures/start.jpg used on input line 46.
@@ -1738,13 +1738,13 @@ LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 5.
-)
+ [3
+
+])
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
- [3
-
-] [4]
+ [4]
 Chapter 1.
 \c@ttl@toc@default=\count393
 
@@ -1864,11 +1864,14 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \vbox (badness 7704) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7
 
 ]
+
+LaTeX Warning: Reference `' on page 8 undefined on input line 142.
+
 
 LaTeX Warning: Reference `' on page 8 undefined on input line 143.
 
@@ -1878,25 +1881,22 @@ LaTeX Warning: Reference `' on page 8 undefined on input line 144.
 
 LaTeX Warning: Reference `' on page 8 undefined on input line 145.
 
-
-LaTeX Warning: Reference `' on page 8 undefined on input line 146.
-
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 194.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 193.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 194.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 193.
 
-Overfull \hbox (57.8811pt too wide) in paragraph at lines 194--195
+Overfull \hbox (57.8811pt too wide) in paragraph at lines 193--194
 \T1/ptm/m/n/10.95 (-20) To be more spe-cific I use a data project from Ross-man
 n []$\T1/cmtt/m/n/10.95 https : / / www . kaggle . com / c / rossmann-[]store-[
 ]sales$[]
  []
 
-<Pictures/rossmann.png, id=157, 642.4pt x 81.30376pt>
+<Pictures/rossmann.png, id=187, 642.4pt x 81.30376pt>
 File: Pictures/rossmann.png Graphic file (type png)
 
 <use Pictures/rossmann.png>
-Package pdftex.def Info: Pictures/rossmann.png used on input line 202.
+Package pdftex.def Info: Pictures/rossmann.png used on input line 201.
 (pdftex.def)             Requested size: 345.75935pt x 43.7607pt.
  [8 <./Pictures/rossmann.png>]
 Chapter 3.
@@ -1907,7 +1907,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.211 \chapter{Customer e-mail categorization}
+l.210 \chapter{Customer e-mail categorization}
                                               
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -1915,18 +1915,18 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `' on page 9 undefined on input line 220.
+LaTeX Warning: Reference `' on page 9 undefined on input line 219.
 
 
-LaTeX Warning: Reference `' on page 9 undefined on input line 220.
+LaTeX Warning: Reference `' on page 9 undefined on input line 219.
 
 [9
 
-] <Pictures/enron.png, id=168, 440.64626pt x 434.62375pt>
+] <Pictures/enron.png, id=199, 440.64626pt x 434.62375pt>
 File: Pictures/enron.png Graphic file (type png)
 
 <use Pictures/enron.png>
-Package pdftex.def Info: Pictures/enron.png used on input line 262.
+Package pdftex.def Info: Pictures/enron.png used on input line 260.
 (pdftex.def)             Requested size: 129.66058pt x 127.88792pt.
 
 
@@ -1943,16 +1943,34 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.274 \chapter{Repeat purchase probability }
+l.272 \chapter{Repeat purchase probability }
                                             
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[13] [14
 
-]
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 277.
+
+
+LaTeX Warning: Reference `' on page 13 undefined on input line 288.
+
+
+LaTeX Warning: Reference `' on page 13 undefined on input line 288.
+
+[13]
+
+LaTeX Warning: Reference `' on page 14 undefined on input line 292.
+
+<Pictures/avsc.png, id=221, 553.06625pt x 349.305pt>
+File: Pictures/avsc.png Graphic file (type png)
+ <use Pictures/avsc.png>
+Package pdftex.def Info: Pictures/avsc.png used on input line 300.
+(pdftex.def)             Requested size: 194.48758pt x 122.83421pt.
+
+[14 <./Pictures/avsc.png>]
 Chapter 5.
 
 ! LaTeX Error: File `' not found.
@@ -1961,21 +1979,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.320 \chapter{Inventory Management Optimization}
+l.311 \chapter{Inventory Management Optimization}
                                                  
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[15] <Pictures/zara.png, id=200, 985.6825pt x 729.72626pt>
+[15
+
+] <Pictures/zara.png, id=233, 985.6825pt x 729.72626pt>
 File: Pictures/zara.png Graphic file (type png)
 
 <use Pictures/zara.png>
-Package pdftex.def Info: Pictures/zara.png used on input line 364.
+Package pdftex.def Info: Pictures/zara.png used on input line 351.
 (pdftex.def)             Requested size: 172.87637pt x 127.98238pt.
 
-Overfull \hbox (2.0571pt too wide) in paragraph at lines 358--366
+Overfull \hbox (2.0571pt too wide) in paragraph at lines 345--353
 \T1/cmtt/m/n/10 org / 80d2 / 4bcf23391dff0907d406cf1466d4b8aab007 . pdf$[]\T1/p
 tm/m/n/10 (-20) . Here I base my model
  []
@@ -1985,25 +2005,25 @@ tm/m/n/10 (-20) . Here I base my model
 
 [16 <./Pictures/zara.png>]
 
-! LaTeX Error: \begin{itemize} on input line 325 ended by \end{document}.
+! LaTeX Error: \begin{itemize} on input line 316 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.376 \end{document}
+l.363 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 363.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 363.
 (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 363.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 363.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2F803F67850A6D1550AF2D633A5CF4B6;1134.
+(rerunfilecheck)             Checksum: 29C524EA5F812780F28F22A7C104D16A;1440.
 
 
 LaTeX Warning: There were undefined references.
@@ -2014,14 +2034,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 325 (\begingroup)
+### semi simple group (level 1) entered at line 316 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 34649 strings out of 492995
- 644587 string characters out of 6132704
+ 34675 strings out of 492995
+ 644915 string characters out of 6132704
  1197137 words of memory out of 5000000
- 37446 multiletter control sequences out of 15000+600000
- 87286 words of font info for 210 fonts, out of 8000000 for 9000
+ 37455 multiletter control sequences out of 15000+600000
+ 89087 words of font info for 217 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,12n,57p,10507b,1882s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm
@@ -2034,10 +2054,10 @@ exlive/2017/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf
 -dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (16 pages, 1344543 bytes).
+Output written on main.pdf (16 pages, 1431155 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 193 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 48305 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 282 PDF objects out of 1000 (max. 8388607)
+ 223 compressed objects within 3 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 50398 words of extra memory for PDF output out of 51595 (max. 10000000)
 
