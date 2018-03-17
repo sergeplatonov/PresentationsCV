@@ -3,13 +3,13 @@
 \usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,letterpaper]{geometry} % Page margins
 
 \usepackage{xcolor} % Required for specifying colors by name
-\definecolor{ocre}{RGB}{52,177,201} % Define the orange color used for highlighting throughout the book
+\definecolor{ocre}{RGB}{52,177,201} 
 
 % Font Settings
 \usepackage{avant} % Use the Avantgarde font for headings
 %\usepackage{times} % Use the Times font for headings
 \usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
-
+\usepackage{hyperref} % for simplicity of citing
 \usepackage{microtype} % Slightly tweak font spacing for aesthetics
 \usepackage[utf8]{inputenc} % Required for including letters with accents
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
@@ -20,6 +20,7 @@
 \defbibheading{bibempty}{}
 
 \input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
+\setlength{\parskip}{0.2cm}
 
 \begin{document}
 
@@ -33,10 +34,10 @@
 \centering
 \vspace*{5cm}
 \par\normalfont\fontsize{35}{35}\sffamily\selectfont
-\textbf{Solutions for data science tasks}\\
-{\LARGE short examples for the broad audience}\par % Book title
+\textbf{Solutions for data science problems}\\
+{\LARGE performed by}\par % Book title
 \vspace*{1cm}
-{\Huge Dr. Sergey Platonov}\par % Author name
+{\Huge Sergey Platonov}\par % Author name
 \endgroup
 
 %----------------------------------------------------------------------------------------
@@ -49,7 +50,7 @@
 
 \noindent \textsc{Berlin, Germany}\\
 
-\noindent \textsc{github.com/splatonov/}\\ % URL
+\noindent \textsc{github.com/sergeplatonov/}\\ % URL
 
 \noindent No special license is provided.\\ % License information
 
@@ -70,16 +71,12 @@
 \pagestyle{fancy} % Print headers again
 
 %----------------------------------------------------------------------------------------
-%	CHAPTER 1
+%	Introduction
 %----------------------------------------------------------------------------------------
-
-\chapterimage{} % Chapter heading image
-
-%Data science explanation
-
 \chapter{Introduction}
 
-The typical goals and deliverables associated with data science are \ref{blabla}:
+The typical goals and deliverables associated with data science \href{https://www.innoarchitech.com/what-is-data-science-does-data-scientist-do/}{are} :
+
 
 \begin{itemize}
 \item \textbf{Prediction (predict a value based on inputs)}
@@ -96,7 +93,8 @@ The typical goals and deliverables associated with data science are \ref{blabla}
 \item \textbf{Forecasts (e.g., sales and revenue)}
 \end{itemize}
 
-Each of these is intended to address a specific goal and/or solve a specific problem. For example, a data scientist may have a goal to create a high performing prediction engine. On the other hand the business that plans to utilize the prediction engine, may have the goal of increasing revenue, which can be achieved by using this prediction engine. It can therefore not be emphasized enough that the ideal data scientist has a fairly comprehensive understanding about how businesses work in general, and how a company’s data can be used to achieve top-level business goals. However with significant business domain expertise, a data scientist should be able to regularly discover and propose new data initiatives to help the business achieve its goals and maximize their KPIs \ref{blabla}.
+
+Each of these is intended to address a specific goal and/or solve a specific problem. For example, a data scientist may have a goal to create a high performing prediction engine. On the other hand the business that plans to utilize the prediction engine, may have the goal of increasing revenue, which can be achieved by using this prediction engine. It can therefore not be emphasized enough that the ideal data scientist has a fairly comprehensive understanding about how businesses work in general, and how a company’s data can be used to achieve top-level business goals. However with significant business domain expertise, a data scientist should be able to regularly discover and propose new data initiatives to help the business achieve its goals and maximize their \href{https://www.innoarchitech.com/what-is-data-science-does-data-scientist-do/}{KPIs}.
 
 \clearpage
 \section{Objective}
@@ -117,15 +115,13 @@ In this report I explain my working methods, machine learning algorithms and vis
 %----------------------------------------------------------------------------------------
 %	CHAPTER 2
 %----------------------------------------------------------------------------------------
-%\chapterimage{head1.png}
-
 \chapter{Time series forecasting}
 
 Time series, in general, are difficult to forecast. If they were easy to forecast then all data scientists would be wealthy, having accurately forecast the value of all of the stocks. The reality is that hedge funds, on average, do not outperform the market and that time series forecasting is typically very poor and applies only to very short durations. The main problems are that there is a lot of noise, there are many hidden influences, models are overly simplistic, influencers do not behave as we think they should, the interplay between linearity and nonlinearity is subtle and confusing, ... ad infinitum.
 
 \section{Feature Engineering}
 
-An important role of the data scientist is to correctly prepare the data to feed an operating algorithm. This preparation likely consists of cleaning, aranging the data and reshaping it in order to reach the intended goal. Here i want to highlight some hints of the data preparation or feature engineering:
+An important role of the data scientist is to correctly prepare the data to feed an operating algorithm. This preparation likely consists of cleaning, arranging the data and reshaping it in order to reach the intended goal. Here i want to highlight some hints of the data preparation or feature engineering:
 
 \begin{itemize}
 \item Modular arithmetic calculations: e.g. converting a timestamp into day of the week, or time of day. If your model needs to know that something happens on the fourth July of every month, it will be nearly impossible to determine this from timestamps.
@@ -139,61 +135,22 @@ An important role of the data scientist is to correctly prepare the data to feed
 
 There are a number of approaches that can be applied to predict time series. Some are better than others depending on the characteristics of the time series (like the distribution dependence for each parameter over time etc.). Methods include:
 \begin{itemize}
-\item Regression - Using time-based features such as week, month, day, day of week, etc as predictors. You can also add in external predictors that may influence the target (e.g. weather and temperature may affect sales of umbrellas) \ref{}.
-\item Autoregresseion and especially ARIMA - Autoregressive Integrated Moving Average - Using autocorrelation (lags) as predictors \ref{}.
-\item Recurrent Neural networks (RNN). In short, RNN models provide a way to not only examine the current input but the one that was provided one step back, as well. If we turn that around, we can say that the decision reached at time step t-1 directly affects the future at step t. \ref{}
-\item LSTM - a special kind of RNN that learns long-term dependencies. \ref{}
+\item \href{}{Regression} - Using time-based features such as week, month, day, day of week, etc as predictors. You can also add in external predictors that may influence the target (e.g. weather and temperature may affect sales of umbrellas).
+\item \href{}{Autoregression} and especially ARIMA - Autoregressive Integrated Moving Average - Using autocorrelation (lags) as predictors.
+\item Deep learning and especially \href{}{Recurrent Neural networks} (RNN). In short, RNN models provide a way to not only examine the current input but the one that was provided one step back, as well. If we turn that around, we can say that the decision reached at time step t-1 directly affects the future at step t. 
+\item \href{}{LSTM} - a special kind of RNN that learns long-term dependencies. 
 \item Other methods.
 \end{itemize}
-
-%Let us now describe the methods in a bit more detailed manner.
-%\subsection{Regression}
-
-%Linear Random forest and Logistic regression
-%There are multiple benefits of using regression analysis. They are as follows:
-%It indicates the significant relationships between dependent variable and independent variable.
-%It indicates the strength of impact of multiple independent variables on a dependent variable.
-%Regression analysis also allows us to compare the effects of variables measured on different scales, such as the effect of price changes and the number of promotional activities. 
-
-%\subsection{ARIMA}
-%What is ARIMA?
-
-%ARIMA method can be be applied to both seasonal data i.e. data that acquires a periodicity with some season and non-seasonal data that is not periodic over the year, month etc.
-%Non-seasonal ARIMA has three input values to help control for smoothing, stationarity, and forecasting ARIMA(p,d,q), where:
-%\begin{itemize}
-
-%\item p is the number of autoregressive terms,
-%\item d is the number of nonseasonal differences needed for stationarity, and
-%\item q is the number of lagged forecast errors in the prediction equation.
-%\end{itemize}
-%By contrast seasonal ARIMA has six input values ARIMA(p,d,q,P,D,Q), where:
-%\begin{itemize}
-%\item P is the number of seasonal autoregressive terms,
-%\item D is the number of seasonal differences, and
-%\item Q is the number of seasonal moving-average terms.
-%\end{itemize}
-%Subject to the qualifying statements above, I suggest playing with seasonal ARIMA to get a feel for the intricacies involved in smoothing, de-seasoning, de-trending, de-noiseing, and forecasting.
-
-%\subsection{LSTM and RNN}
-%What are the LSTM AnD RNN?
-%Neural networks can be a very powerful tool, but they:
-%\begin{itemize}
-%\item can take a long time to run,
-%\item often require more data to train than other models, and
-%\item have lots of input parameters to tune.
-%\end{itemize}
-%I will add that red flags tend to be raised when someone begins at data science exercise with deep learning. Most of books suggest learning as much as you can using ARIMA and regression methods and then applying some of your ARIMA expertise to help you learn LSTM. 
- 
 
 \section{Cross validation and comparing models}
 
 Time series are fun in that all training data can usually be turned into supervised learning training sets. Once can simply take a time series and roll back time. That is when we pick a point in time and pretend that you don't have any additional data, then produce a forecast and see how well you did. You can march through the time series doing this n times in order to get an assessment of the performance of your model and to compare models while taking the necessary precautions to prevent overfitting. This is the formulation of the cross validation process.
 
 \section{Examples}
-To be more specific I use a data project from Rossmann \url{https://www.kaggle.com/c/rossmann-store-sales} to illustrate the prediction of the time series.
+To be more specific I use a data project from Rossmann to illustrate the prediction of the time series that you can find at \href{https://github.com/sergeplatonov/Data_problems/tree/master/Time%20series%20forecasting}{Github}.
 
 \begin{remark}
-Rossmann operates over 3,000 drug stores in 7 European countries. Currently, Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance. Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. With thousands of individual managers predicting sales based on their unique circumstances, the accuracy of results can be quite varied.
+Rossmann operates over 3,000 drug stores in 7 European countries. Currently, Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance. Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. 
 
 The task is to predict 6 weeks of daily sales for 1,115 stores located across Germany. Reliable sales forecasts enable store managers to create effective staff schedules that increase productivity and motivation. 
 \begin{figure}[h]
@@ -201,12 +158,11 @@ The task is to predict 6 weeks of daily sales for 1,115 stores located across Ge
 \includegraphics[width=0.8\linewidth]{Pictures/rossmann.png}
 \end{figure}
 \end{remark}
-\url{https://github.com/platonovserge/data-science-problems/Time Series }
+\url{https://www.kaggle.com/c/rossmann-store-sales}
 %----------------------------------------------------------------------------------------
 %	Customer e-mail categorization
 %----------------------------------------------------------------------------------------
 
-%\chapterimage[0.3]{head2}
 \chapter{Customer e-mail categorization}
 
 Undoubtedly, categorizing e-mails based on the content poses many challenges. In reality, there is a constant stream of new information being passed through e-mails each day and what we learn from previous e-mails may not be able to tell us much about future e-mails. E-mail threads will branch off onto new topics, and each user organizes their e-mails in different ways. 
@@ -216,7 +172,7 @@ Within this task I will attempt to accurately classify e-mails into folders usin
 \section{Model description}
 For the computer to make inferences of the e-mails, it has to be able to interpret the text by making a numerical representation of it. One way to do this is by using something called a Bag-of-words model. It will take the e-mails as a string and convert it into a numerical vector to show the frequency that each unique word appears over the entire dataset.
 
-Bag-of-word model is an orderless document representation—only the counts of words mattered \ref{}. One way to store this spatial information within the text is the n-gram model (basically it will split the text into groups of n words with the right order). Term-frequency-inverse document frequency (TF-IDF) is another way to judge the topic of an article by the words it contains \ref{}. With TF-IDF, words are given weight – TF-IDF measures relevance, not frequency. That is, wordcounts are replaced with TF-IDF scores across the whole dataset. A general alternative to the use of dictionaries is the hashing trick, where words are directly mapped to indices with a hashing function. By mapping words to indices directly with a hash function, no memory is required to store a dictionary. 
+Bag-of-word model is an orderless document representation — only the counts of words mattered. One way to store this spatial information within the text is the n-gram model (basically it will split the text into groups of n words with the right order). Term-frequency-inverse document frequency (TF-IDF) is another way to judge the topic of an article by the words it contains. With TF-IDF, words are given weight – TF-IDF measures relevance, not frequency. That is, wordcounts are replaced with TF-IDF scores across the whole dataset. A general alternative to the use of dictionaries is the hashing trick, where words are directly mapped to indices with a hashing function. By mapping words to indices directly with a hash function, no memory is required to store a dictionary. 
 
 \section{Feature Engineering}
 Here are the list of things that needs to be performed on the data:
@@ -235,7 +191,7 @@ Here are the list of things that needs to be performed on the data:
 \item Remove stop-words
 \end{itemize}
 
-The regular expressions, which includes punctuation marks and nonword characters need to be removed. I will use Python's regular expression (regex) libary to remove these characters. I will also focus on just one employee for the classification problem. After seeing the steps involved in classifying one employee's e-mails, we can apply the same approach for a few other employees. We also remove folders that do not contain enough e-mails because such folders would not be significant for training our classifier.
+The regular expressions, which includes punctuation marks and non-word characters need to be removed. I will use Python's regular expression (regex) libary to remove these characters. I will also focus on just one employee for the classification problem. After seeing the steps involved in classifying one employee's e-mails, we can apply the same approach for a few other employees. We also remove folders that do not contain enough e-mails because such folders would not be significant for training our classifier.
 
 \section{ML methods}
 As a training model for ML I use logistic regression that works with the case of a binary dependent variable. In training a multiclass classification problem, we have to train n models where n is the number of unique folders present. Using a one-vs-all approach, we need to train models where all e-mails belonging to a folder are classified as positive (1) or True and all e-mails not belonging to a folder are classified as negative (0) or False.
@@ -250,56 +206,79 @@ For the folders first, second and third, then we train 3 models with the followi
 \end{itemize}
 
 \section{Examples}
-I illustrate the e-mail categorization process on a data collected from a collapsed company Enron 
+I illustrate the e-mail categorization process on a data collected from a collapsed company Enron. You can find the correspondent code at the \href{https://github.com/sergeplatonov/Data_problems/tree/master/Email%20categorization}{Github}.
 \begin{remark}
 The Enron email dataset contains approximately 500,000 emails generated by employees of the Enron Corporation. It was obtained by the Federal Energy Regulatory Commission during its investigation of Enron's collapse.
 
 This is the May 7, 2015 Version of dataset, as published at https://www.cs.cmu.edu/~./enron/
-\begin{figure}[h]
-\center
-\includegraphics[width=0.3\linewidth]{Pictures/enron.png}
-\end{figure}
-\end{remark}
-\url{https://github.com/platonovserge/enron}
+%\begin{figure}[h]
+%\center
+%\includegraphics[width=0.3\linewidth]{Pictures/enron.png}
+%\end{figure}
+%\end{remark}
+
 
 
 %----------------------------------------------------------------------------------------
 %	Customer Lifetime Value
 %----------------------------------------------------------------------------------------
 
-%\chapterimage{head1.png} % Chapter heading image
+%\chapterimage[width=0.3\linewidth]{avsc.png} % Chapter heading image
 
 \chapter{Repeat purchase probability }
 
 Consumer brands often offer discounts to attract new customers to buy their products. The most valuable customers are those who return after this initial incented purchase.  With enough purchase history, it is possible to predict which customers, when presented an offer, will buy a new item. However, identifying the customer who will become a loyal buyer -- prior to the initial purchase -- is a more challenging task.
-Customer lifetime value (CLV), “discounted value of future profits generated by a customer" is a helpful parameter in this problem. The word profits here includes costs and revenue estimates, as both metrics are very important in estimating true CLV; however, the focus of many CLV models is on the revenue side. 
+Customer lifetime value (CLV), “discounted value of future profits generated by a customer" is a helpful parameter in this problem. Generally speaking the CLV can be calculated as: (Avg Monthly Revenue per Customer * Gross Margin per Customer) ÷ Monthly Churn Rate.
 
-\subsection{Data reduction}
-The necessary dataset for the problem contains the transaction information that contains customer ID, date and value of transactions. It is usually enormously huge (over 10 Gb) making feature engineering proccess hard and time consuming. Just for getting started, to get the data down to a more manageable size, it is possible to extract from transaction information only transactions where the category was related to at least one of the made offers. This reduction process gets the transactions data down from about 22GB to about 1GB in my example. %In more general cases it is necessary to use
+\section{Data reduction}
+The necessary dataset for the problem contains the transaction information that contains customer ID, date and value of transactions. It is usually enormously huge (over 10 GB) making feature engineering process hard and time consuming. Just for getting started, to get the data down to a more manageable size, it is possible to extract from transaction information only transactions where the category was related to at least one of the made offers. This reduction process gets the transactions data down from about 22GB to about 1GB in my example. 
 
-\subsection{Feature Engineering}
-To simplify the discussion we will generate the following features using the python 'Lifetimes' library:
+\section{Feature Engineering}
+
+For the general task we can generate the following features:
 \begin{itemize}
-\item age of the customer i.e.
-\item recency or age at the last customer purchase.
-\item frequency or the number of repeat transactions the customer has made.
+\item the number of times a shopper has bought from the company on offer
+\item the total amount the shopper has bought from the company on offer
+\item the quantity of items bought from the company on offer.
+\item the number of times a shopper has bought from the company on offer in the 30 days before the date the coupon was offered. The same can be done for 60,90,120 days.
+\item the number of times a shopper has bought from the category on offer
+\item the number of times a shopper has bought from the brand on offer
+\item if this feature is present the shopper has bought from the company, brand, and category on offer.
+\item a negative feature for when the shopper has never bought from the company on offer before.
+\item a negative feature for the combination of brand and company purchase history.
 \end{itemize}
-We also generate the total amount spent by each customer i.e. the item monetization feature for the CLV prediction later on. Alternative models can include larger list of features \ref{} different studies showed the general applicability of this simple method \ref{}. Lifetimes library has a convinient utility functions to transform our transactional data (one row per purchase) into summary data (a frequency, recency and age dataset).
+As well we can add some offer-related features:
+\begin{itemize}
+\item The value of the coupon offer
+\item The number of products to redeem with the coupon
+\end{itemize}
+And finally some general monetization features:
+\begin{itemize}
+\item the total amount spend by the shopper
+\end{itemize}
+To simplify the discussion we can instead deal with only three main features using the python 'Lifetimes' library:
+\begin{itemize}
+\item age of the customer i.e. the duration between a customer’s first purchase and the end of the period under study.
+\item recency or age at the last customer purchase. This is equal to the duration between a customer’s first purchase and their latest purchase. 
+\item frequency or the number of repeat transactions the customer has made. It is the count of time periods the customer had a purchase in. So if using days as units, then it’s the count of days the customer had a purchase on.
+\end{itemize}
+Lifetimes library has easy utility functions to transform our transactional data (one row per purchase) into summary data (a frequency, recency and age dataset).
 
 \section{Methods}
+For the general formulation we can treat the task as a classification problem and apply ML classification algorithms like Random Tree Classifier. Then we can predict future revenues, based on estimation about future products purchased and price paid and finally calculate the CLV.
 
-In order to visualize the CLV we compute the Frequency/Recency matrix i.e. the expected number of transactions a artifical customer is to make in the next time period, given his or her recency () and frequency (). As an ML method it is convininent to use the BG/NPD method \ref{}. This method predicts based on.For the CLV prediction we can use the Gamma-Gamma model. 
+If we can work with only 3 features we can easily visualize the CLV by computing the Frequency/Recency matrix i.e. the expected number of transactions a artificial customer is to make in the next time period, given his or her recency and frequency. Then as an ML method it is convenient to use the \href{http://www45.essec.fr/professorsCV/showDeclFileRes.do?declId=8555&key=Publication-Content}{BG/NPD} model for future purchase predictions. This method assumes an exponentially distributed active duration and Poisson distributed purchase frequency. For the CLV prediction we can use the Gamma-Gamma model with the key assumption about the independence between the number of transactions of a customer and the related profit per transaction. 
 
-\section{Example}
-I illustrate this discussion with a realistic example based on the Acquire Valued customers Challenge from kaggle \url{https://www.kaggle.com/c/acquire-valued-customers-challenge}.
+\section{Examples}
+I illustrate this discussion with a realistic \href{https://github.com/sergeplatonov/Data_problems/tree/master/Repeat%20purchase%20probability}{example} based on the Acquire Valued customers Challenge from kaggle.
 \begin{remark}
 The Acquire Valued customers Challenge asks participants to predict which customers are most likely to repeat purchase. To aid with algorithmic development, we have provided complete, basket-level, pre-offer shopping history for a large set of customers who were targeted for an acquisition campaign. The incentive offered to that customer and their post-incentive behavior is also provided.
-\begin{figure}[h]
-\center
-\includegraphics[width=0.45\linewidth]{Pictures/avsc.png}
-\end{figure}
+%\begin{figure}[h]
+%\center
+%\includegraphics[width=0.25\linewidth]{Pictures/avsc.png}
+%\end{figure}
 \end{remark}
-\url{https://github.com/sergeplatonov}
+\url{https://www.kaggle.com/c/acquire-valued-customers-challenge}.
 
 %----------------------------------------------------------------------------------------
 %   Linear optimization
@@ -321,39 +300,36 @@ To solve this problem it is necessary to introduce:
 \section{Input of the optimization model}
 In many clothing retail stores, an important source of negative customer experience stems from customers who have identified (perhaps after spending much time searching a crowded store) a specific article they would like to buy, but then cannot find their size on the shelf/rack. Proper management of size inventory seems even more critical to a modern retailer that offers a large number of articles produced in small series throughout the season. The presence of many articles with missing sizes would thus be particularly detrimental to the customers store experience. 
 \begin{remark}
-For simplicity of the discussion we will omit now the differeitiating the sizes between major (S,M,L) abd minor (XXS,XXL) and possible manager actions related to this two groups of articles. Practically the problem will also have a dynamic component because of the shipment decisions any given week. In addition the problem may involve connections between different articles that I neglect here.
+For simplicity of the discussion we will omit now the differentiating the sizes between major (S,M,L) and minor (XXS,XXL) and possible manager actions related to this two groups of articles. Practically the problem will also have a dynamic component because of the shipment decisions any given week. In addition the problem may involve connections between different articles that I neglect here.
 \end{remark}
 
 \section{Linearizing the problem}
-A key concept for estimating the total number of sales $G$ from an initial profile of inventory will dependent now on a so-called virtual stockout time $t_s$ i.e. the time at which the store will run out of the chosen size. The primary input for the optimization model includes a demand forecast $D_i^s$ for every retail store $i$ and for every given size $s$ and the inventory avialiable in stores $I_i^s$. I also assume that all inventory is removed from customer view as soon as one of the major sizes runs out (less than four articles) at any point between succesive replenishments.
+A key concept for estimating the total number of sales from an initial profile of inventory will dependent now on a so-called virtual stock-out time i.e. the time at which the store will run out of the chosen size. The primary input for the optimization model includes a demand forecast for every retail store and for every given size and the inventory available in stores. I also assume that all inventory is removed from customer view as soon as one of the major sizes runs out (less than four articles) at any point between successive replenishments.
 
 \section{Mixed Integer Problem}
-The main opjective to implement an optimization model for distributing a limited amount of warehouse inventory between all stores of retailer with the goal of maximizing total expected revenue. The primary decision variables $x_i^s$ represent the shipment quantities of each size to each store. This quantities are subjected to the warehouse inventory constraint that insures the total shipment of a given size across all stores never exceed the inventory $W_s$. The secondary decision variables $z_i$ correspond to approximately expected sales across all sizes in each store $i$ for the current period under consideration. Now I can introduce a maximization problem of the sum of expected revenues in the current period.
+The main objective to implement an optimization model for distributing a limited amount of warehouse inventory between all stores of retailer with the goal of maximizing total expected revenue. The primary decision variables represent the shipment quantities of each size to each store. This quantities are subjected to the warehouse inventory constraint that insures the total shipment of a given size across all stores never exceed the inventory. The secondary decision variables correspond to approximately expected sales across all sizes in each store for the current period under consideration. Now we can introduce a maximization problem of the sum of expected revenues in the current period. This problem considers each article independently and captures dynamic effects in a heuristic manner.
 
 \section{Control values}
-
-
-%\begin{remark}
-%Here I also omit the discussion of 
-%\end{remark}
+As control values  for quantifying missed
+sales due to lack of inventory (i.e., unde-stock) we can use the
+ratio of cumulative sales to cumulative demand -- demand cover ration. On the other hand for quantifying any excess inventory (i.e., overstock) we use the ratio of cumulative sales to cumulative shipments or shipment success ratio.
 
 \section{Methods}
+The solution of the Mixed Integer Problem can be performed with the help of python PULP library. An example is provided in the \href{https://github.com/sergeplatonov/Data_problems/tree/master/Logistics%20optimization}{github repository}.
 
- PULP library, 
 
+\section{Examples}
 \begin{remark}
 The case of Inventory Management of a Fast-Fashion
-Retail Network was studied by F. Caro and J.Gallien for the case of Zara Retail \url{https://pdfs.semanticscholar.org/80d2/4bcf23391dff0907d406cf1466d4b8aab007.pdf}. Here I base my model on their research
-and write the example code for the Mixed Integer Programming \url{https://github.com/platonovserge/logistics_optimization}.
+Retail Network was studied by F. Caro and J.Gallien for the case of Zara Retail 
 \begin{figure}[h]
 \center
-\includegraphics[width=0.4\linewidth]{Pictures/zara}
+\includegraphics[width=0.3\linewidth]{Pictures/zara}
 \end{figure}
 
-Inventory optimization models are put in place in Zara to help the company to determine the quantity that should be delivered to every single one of its retail stores via shipments that go out twice every week. The stock delivered is strictly limited, ensuring that each store only receives just want they need. This goes towards the brand image of being exclusive while avoiding the build up of unpopular stock.
+Inventory optimization models are put in place in Zara to help the company to determine the quantity that should be delivered to every single one of its retail stores via shipments that go out twice every week.
 \end{remark}
-
-
+\url{https://pdfs.semanticscholar.org/80d2/4bcf23391dff0907d406cf1466d4b8aab007.pdf}. 
 
 
 

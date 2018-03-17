@@ -11,13 +11,14 @@
 \BOOKMARK [1][-]{section.3.3}{ML methods}{chapter.3}% 11
 \BOOKMARK [1][-]{section.3.4}{Examples}{chapter.3}% 12
 \BOOKMARK [0][-]{chapter.4}{Repeat purchase probability }{}% 13
-\BOOKMARK [1][-]{subsection.4.0.1}{Data reduction}{chapter.4}% 14
-\BOOKMARK [2][-]{subsection.4.0.2}{Feature Engineering}{subsection.4.0.1}% 15
-\BOOKMARK [1][-]{section.4.1}{Methods}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{Example}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.1}{Data reduction}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.2}{Feature Engineering}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.3}{Methods}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.4}{Examples}{chapter.4}% 17
 \BOOKMARK [0][-]{chapter.5}{Inventory Management Optimization}{}% 18
 \BOOKMARK [1][-]{section.5.1}{Input of the optimization model}{chapter.5}% 19
 \BOOKMARK [1][-]{section.5.2}{Linearizing the problem}{chapter.5}% 20
 \BOOKMARK [1][-]{section.5.3}{Mixed Integer Problem}{chapter.5}% 21
 \BOOKMARK [1][-]{section.5.4}{Control values}{chapter.5}% 22
 \BOOKMARK [1][-]{section.5.5}{Methods}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.6}{Examples}{chapter.5}% 24
